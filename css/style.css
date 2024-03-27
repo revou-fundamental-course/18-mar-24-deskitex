@@ -1,0 +1,140 @@
+:root {
+  --pageSize: 800px;
+  --formSize: 225px;
+}
+
+body {
+  background-color: ghostwhite;
+}
+.head-container {
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  width: var(--pageSize);
+  justify-content: space-around;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  flex-wrap: wrap;
+  column-gap: 20rem;
+  
+
+  /* padding-inline: 50px; */
+}
+
+nav button {
+  border: 2px solid;
+  cursor: pointer;
+  margin-inline: 0;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  background-color: white;
+}
+nav .home {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+nav .call {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+hr {
+  margin-block: 0;
+  width: var(--pageSize);
+  border: 1px solid grey;
+}
+
+.logo-icon {
+  width: 50px;
+}
+
+.head-container > nav > button {
+  margin-left: -5px;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: column;
+  width: var(--pageSize);
+  justify-content: center;
+  /* align-items: center; */
+  background-color: white;
+}
+
+.page1-header {
+  text-align: center;
+  padding-block: 2rem;
+}
+.page1-main {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.section1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.section1-author {
+  margin-left: 2rem;
+}
+
+.section1-desc {
+  margin-left: 2rem;
+}
+.section1-image > img {
+  width: 450px;
+  border-radius: 5px;
+}
+
+.section2-container {
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 500px;
+  background-color: ghostwhite;
+  padding-inline: 2rem;
+  width: 200px;
+}
+
+.section2-title {
+  flex: 1;
+}
+
+.section2-form {
+  flex: 3;
+}
+
+.section2-form div {
+  margin-block: 1rem;
+}
+
+.section2-form input {
+  width: var(--formSize);
+  height: 40px;
+  margin-block: 0.5rem;
+  border-radius: 5px;
+  border-color: ghostwhite;
+}
+
+.section2-form button {
+  width: var(--formSize);
+  height: 40px;
+  background-color: rgb(14, 6, 42);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
