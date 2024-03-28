@@ -45,7 +45,7 @@ nav .call {
   border-bottom-right-radius: 5px;
 }
 
-hr {
+.head-container hr {
   margin-block: 0;
   width: 100%;
   border: 1px solid grey;
@@ -61,8 +61,10 @@ hr {
 
 .main-container {
   display: flex;
+  /* flex-direction: column; */
   flex-wrap: wrap;
   justify-content: center;
+  /* align-items: center; */
   font-family: "Quicksand", sans-serif;
 }
 
@@ -90,9 +92,10 @@ hr {
 
 .section1-container {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: flex-start;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 
@@ -264,4 +267,143 @@ hr {
   background-color: white;
   max-width: 500px;
   flex-direction: column;
+}
+
+.our-packages {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-block: 3rem;
+}
+
+.page2 {
+  display: flex;
+  flex-direction: column;
+  width: var(--pageSize);
+  align-items: center;
+  background-color: white;
+}
+
+.page2-section1-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.page2-icon {
+  border-radius: 50%;
+  background-color: whitesmoke;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 1.7rem;
+  height: 1.7rem;
+  margin-inline: 1rem;
+}
+
+.section1-country {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+.section1-country-container {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin-inline: 1rem;
+}
+
+.page2-section1-container hr {
+  width: 20%;
+  border: 2px solid grey;
+}
+
+.section1-province {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.section1-province-container {
+  display: flex;
+  justify-content: center;
+  max-width: 200px;
+  margin-inline: 1rem;
+}
+
+.page2 > hr {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+.page2-section2-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  max-width: 700px;
+  margin-block: 2rem;
+}
+
+.page2-section2-container h1 {
+  font-size: 2rem;
+}
+
+.page2-section2-container span {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.page2-section2-container button {
+  width: 180px;
+  padding-block: 0.5rem;
+  font-size: 1rem;
+  background-color: rgb(14, 6, 42);
+  color: white;
+  border: none;
+}
+
+.page2-section2-container button:hover {
+  background-color: white;
+  color: black;
+  border: 2.5px solid black;
+}
+
+.hr-footer {
+  width: 100%;
+  border: 1px solid grey;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: var(--pageSize);
+  margin-inline: auto;
+  background-color: white;
+  margin-bottom: 3rem;
+  padding-block: 1rem;
+}
+
+footer img {
+  width: 50px;
+  margin-inline: 1rem;
+}
+
+footer span {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: gray;
 }

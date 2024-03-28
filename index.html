@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Travel</title>
+    <link rel="icon" href="assets/icon-travel-0.jpg" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Awesome Font -->
@@ -30,9 +31,11 @@
         <img src="assets/icon-travel-0.jpg" alt="logo" width="100%" />
       </div>
       <nav class="nav-container">
-        <button class="home">Home</button>
-        <button class="packages">Our Packages</button>
-        <button class="call">Call Us</button>
+        <a href="#home"><button class="home">Home</button></a>
+        <a href="#our-packages"
+          ><button class="packages">Our Packages</button></a
+        >
+        <a href="#call-us"><button class="call">Call Us</button></a>
       </nav>
       <hr />
     </header>
@@ -42,7 +45,7 @@
     <main class="main-container">
       <!--Page1 Content-->
 
-      <section class="page1">
+      <section class="page1" id="home">
         <header class="page1-header">
           <h1>Your Trusted Travel Agent's</h1>
           <h4>Your Happiness is Our Happiness</h4>
@@ -51,8 +54,8 @@
         <main class="page1-main">
           <section class="section1-container">
             <section class="section1-image">
-              <img src="assets/pexels-timur-kozmenko-2474690.jpg" />
-            </section>
+              <img class="img-list" src="assets/pexels-timur-kozmenko-2474690.jpg" />
+              <img  class="img-list" src="assets/pexels-ray-bilcliff-1473114.jpg"/>
 
             <section class="section1-desc">
               <p style="font-size: 0.8rem">
@@ -88,6 +91,7 @@
                     id="name"
                     placeholder="First and Last Name"
                     class="input"
+                    required
                   />
                 </div>
 
@@ -98,6 +102,7 @@
                     id="email"
                     placeholder="example@gmail.com"
                     class="input"
+                    required
                   />
                 </div>
 
@@ -105,7 +110,13 @@
                 <br />
 
                 <div class="dropdown">
-                  <input type="" id="interest" placeholder="Select Option" class="dropdown-input" />
+                  <input
+                    type=""
+                    id="interest"
+                    placeholder="Select Option"
+                    class="dropdown-input"
+                    required
+                  />
                   <button class="dropdown-button" onclick="">
                     <i class="fa-solid fa-sort-down"></i>
                   </button>
@@ -120,7 +131,7 @@
                   <br />
                 </div>
                 <div>
-                  <button class="send-button"><b>Send</b></button>
+                  <button class="send-button" onclick="sendButton()"><b>Send</b></button>
                 </div>
               </form>
             </section>
@@ -148,12 +159,103 @@
 
       <!--Page1 Content-->
 
-      <section class="page2"></section>
+      <section class="our-packages" id="our-packages">
+        <h1>Our Packages</h1>
+      </section>
+
+      <!--Page2 Content-->
+      <section class="page2">
+        <section class="page2-section1-container">
+          <div class="section1-country">
+            <div class="section1-country-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="country-desc">
+                <p><b>Bali</b></p>
+                <p>Explore the beauty of Bali</p>
+              </div>
+            </div>
+
+            <div class="section1-country-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="country-desc">
+                <p><b>Japan</b></p>
+                <p>Explore the beauty of Japan</p>
+              </div>
+            </div>
+
+            <div class="section1-country-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-lightbulb"></i>
+              </div>
+              <div class="country-desc">
+                <p><b>Singapore</b></p>
+                <p>Explore the beauty of Singapore</p>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+
+          <div class="section1-province">
+            <div class="section1-province-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="province-desc">
+                <p><b>Bandung</b></p>
+                <p>Explore the beauty of Bandung</p>
+              </div>
+            </div>
+
+            <div class="section1-province-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="province-desc">
+                <p><b>Surabaya</b></p>
+                <p>Explore the beauty of Surabaya</p>
+              </div>
+            </div>
+
+            <div class="section1-province-container">
+              <div class="page2-icon">
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="province-desc">
+                <p><b>Jakarta</b></p>
+                <p>Explore the beauty of Jakarta</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <hr />
+
+        <section class="page2-section2-container">
+          <h1>Thanks For The Visit</h1>
+          <span
+            >Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+            inventore placeat nulla molestiae explicabo laboriosam, magnam nihil
+            quia. Optio consequuntur praesentium culpa adipisci sed ad quia
+            corrupti maxime doloremque earum!</span
+          >
+          <button id="call-us">Call Us</button>
+        </section>
+        <hr class="hr-footer" />
+      </section>
     </main>
 
     <!--Main Content-->
 
-    <footer></footer>
+    <footer>
+      <img src="assets/icon-travel-0.jpg" alt="Travel Icon" />
+      <span>Term of Service Privacy Policy</span>
+      <span>2024 &copy; Deskitex</span>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
