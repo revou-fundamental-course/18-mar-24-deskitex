@@ -22,8 +22,8 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
     />
-
   </head>
+
   <body>
     <header class="head-container">
       <div class="logo-icon">
@@ -34,7 +34,7 @@
         <button class="packages">Our Packages</button>
         <button class="call">Call Us</button>
       </nav>
-      <hr>
+      <hr />
     </header>
 
     <!--Main Content-->
@@ -55,20 +55,26 @@
             </section>
 
             <section class="section1-desc">
-              <p>"Liburan Jadi Menyenangkan Bersama Travel Agentku"</p>
+              <p style="font-size: 0.8rem">
+                <i>"Liburan Jadi Menyenangkan Bersama Travel Agentku"</i>
+              </p>
             </section>
 
             <section class="section1-author">
-              <img src="" alt="" />
-              <p><b>Florence Hughes</b></p>
-              <p>Ibu Rumah Tangga, 28</p>
+              <div class="section1-author-icon-container">
+                <i class="fa-regular fa-user" style="color: gray"></i>
+              </div>
+              <div class="section1-author-desc">
+                <p><b>Florence Hughes</b></p>
+                <p style="color: gray"><i>Ibu Rumah Tangga, 28</i></p>
+              </div>
             </section>
           </section>
 
           <section class="section2-container">
             <section class="section2-title">
-              <h3>Contact Us</h3>
-              <p>
+              <p><b>Contact Us</b></p>
+              <p class="section2-title-desc">
                 Sales Akan Meghubungi Anda 1x24 Jam Setelah Data Kami Terima
               </p>
             </section>
@@ -81,6 +87,7 @@
                     type="text"
                     id="name"
                     placeholder="First and Last Name"
+                    class="input"
                   />
                 </div>
 
@@ -90,17 +97,30 @@
                     type="email"
                     id="email"
                     placeholder="example@gmail.com"
+                    class="input"
                   />
                 </div>
-                <div>
-                  <label for="interest">What are you interested in?</label>
-                  <br />
-                  <input type="" id="interest" placeholder="Select Option" />
-                  <br />
 
-                  <div>
-                    <button>Send</button>
+                <label for="interest">What are you interested in?</label>
+                <br />
+
+                <div class="dropdown">
+                  <input type="" id="interest" placeholder="Select Option" class="dropdown-input" />
+                  <button class="dropdown-button" onclick="">
+                    <i class="fa-solid fa-sort-down"></i>
+                  </button>
+                  <div class="dropdown-content">
+                    <button>Bali</button>
+                    <button>Japan</button>
+                    <button>Singapore</button>
+                    <button>Bandung</button>
+                    <button>Surabaya</button>
+                    <button>Jakarta</button>
                   </div>
+                  <br />
+                </div>
+                <div>
+                  <button class="send-button"><b>Send</b></button>
                 </div>
               </form>
             </section>
@@ -134,5 +154,6 @@
     <!--Main Content-->
 
     <footer></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
